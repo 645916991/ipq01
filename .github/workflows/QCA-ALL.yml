@@ -42,7 +42,7 @@ jobs:
       matrix:
         TARGET: [IPQ60XX-WIFI-NO]
         REPO_INFO:
-          - {SOURCE: coolsnowwolf/lede, BRANCH: master, NAME: LEDE, SUFFIX: LEDE}
+          - {SOURCE: coolsnowwolf/lede, BRANCH: master, NAME: OpenWrt, SUFFIX: LEDE}
           #- {SOURCE: coolsnowwolf/lede, BRANCH: master, NAME: LEDE-FW4, SUFFIX: LEDE-FW4}
           #- {SOURCE: VIKINGYFY/immortalwrt, BRANCH: main, NAME: OWRT, SUFFIX: IMM}
           #- {SOURCE: LiBwrt-op/openwrt-6.x, BRANCH: openwrt-24.10, NAME: LibWRT, SUFFIX: IMM}
@@ -58,7 +58,7 @@ jobs:
       #默认主机名
       WRT_NAME: ${{matrix.REPO_INFO.NAME}}
       #默认地址
-      WRT_IP: 192.168.10.1
+      WRT_IP: 192.168.68.1
       #默认密码，仅作提示，修改无用
       WRT_PW: password
       #源码链接
